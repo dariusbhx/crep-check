@@ -1,10 +1,10 @@
-from djongo import Models
+from djongo import models
 
 # Create your models here.
 
 
-class Post(Models.Model):
-    title = Models.CharField(max_length=120)
-    description = Models.TextField()
-    price = Models.DecimalField(max_digits=6, decimal_places=1)
-    image = Models.ImageField()
+class Post(models.Model):
+    title = models.CharField(max_length=120)
+    description = models.TextField()
+    price = models.DecimalField(max_digits=6, decimal_places=1)
+    image = models.ImageField()
