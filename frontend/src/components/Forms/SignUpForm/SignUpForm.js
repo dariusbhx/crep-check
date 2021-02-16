@@ -1,10 +1,10 @@
 import React from 'react'
-import {useGlobalContext} from '../../../context'
 import FileBase from 'react-file-base64'
-import '../../CreatePostForm/CreatePost.css'
+
 import './SignUpForm.css'
 const SignUpForm = () => {
-    const {title,description,image,price,setFormData,formData} = useGlobalContext()
+   
+  
 
     return (
  

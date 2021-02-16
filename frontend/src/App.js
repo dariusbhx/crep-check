@@ -1,14 +1,10 @@
-import CreatePost from './components/CreatePostForm/CreatePost'
+import CreatePostForm from './components/Forms/CreatePostForm/CreatePostForm'
 import Navbar from './components/Navbar/Navbar'
-import Flexbox from './flexbox/Flexbox'
-import SignUpForm from './components/Forms/SignUpForm/SignUpForm'
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <SignUpForm />
-      {/* <CreatePost /> */}
-      {/* <Flexbox /> */}
+      <CreatePostForm />
     </div>
   );
 }
