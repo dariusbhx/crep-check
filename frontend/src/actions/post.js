@@ -1,5 +1,5 @@
-import * as api from '../api'
-import {CREATE,UPDATE,FETCH_ALL,DELETE} from '../constants/constants'
+import * as api from '../api/index.js'
+import {CREATE,UPDATE,FETCH_ALL,DELETE,LIKEPOST} from '../constants/constants'
 
 
 export const getPosts = () => async (dispatch) => {
@@ -34,6 +34,16 @@ export const deletePost = (id) => async (dispatch) => {
         await api.deletePost()
         dispatch({type:DELETE, payload: id})
     }catch(error){
+        console.log(error)
+    }
+}
+
+export const likePost = (id) => async (dispatch) => {
+    try {
+        const {data} =  await api.likePost(id)
+        dispatch({type :LIKEPOST, payload: data})
+        
+    } catch (error) {
         console.log(error)
     }
 }

@@ -4,17 +4,18 @@ const AppContext = React.createContext()
 
 const AppProvider = ({children}) => {
     const [formData,setFormData] = useState({
-        id: "",
         title: "",
         description: "",
         image: "",
-        date: "",
         price: ""
     })
+    const [currentId,setCurrentId] = useState(null)
     return (
         <AppContext.Provider value = {{
             formData,
-            setFormData
+            setFormData,
+            currentId,
+            setCurrentId
         }}>
             {children}
         </AppContext.Provider>

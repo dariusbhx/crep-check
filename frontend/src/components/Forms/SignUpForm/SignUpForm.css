@@ -81,6 +81,15 @@ input[type="file"] {
   align-items: center;
 }
 
+.name-container {
+  display: flex;
+  flex-direction: row;
+}
+input[type="text"] {
+  border: 1px solid white;
+  border-radius: none !important;
+}
+
 @media (max-width: 960px) {
   .wrapper {
     width: 500px;

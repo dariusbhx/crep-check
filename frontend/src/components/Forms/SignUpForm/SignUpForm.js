@@ -12,15 +12,17 @@ const SignUpForm = () => {
          <form action="" className="form-area">
           
            <div className="details-area">
-             <label htmlFor="title">Title</label>
-             <input type="text" id ="title"/>
+             <div className ="name-container">
+              <label htmlFor="first-name">First name</label>
+              <input type="text" id ="first-name"/>
+              <label htmlFor="last-name">Last name</label>
+              <input type="text" id  ="last-name"/>
+             </div>
+             
 
              <label htmlFor="price">Price</label>
              <input type="text" id ="price"/>
-             <div className="desc-area">
-              <label htmlFor="desc">Description</label>
-              <textarea name="" id="desc" cols="15" rows="8"></textarea>
-             </div>
+             
              <div>
                 <label htmlFor="image">Image</label>
                 <FileBase className ="image-input" id = "image" type ="file" multiple = {false}  />

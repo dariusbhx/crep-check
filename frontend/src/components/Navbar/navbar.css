@@ -25,7 +25,15 @@ ul li {
   background-color: darkorange;
   width: 100%;
 }
-
+.navbar-btn {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: none;
+  background-color: darkorange;
+}
 nav {
   display: flex;
   flex-direction: column;
@@ -46,6 +54,9 @@ nav {
 }
 button {
   border: none;
+}
+div button {
+  border-radius: none;
 }
 
 @media (min-width: 768px) {

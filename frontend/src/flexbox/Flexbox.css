@@ -1,0 +1,38 @@
+.div-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 2;
+}
+
+.div-2 {
+  background-color: aqua;
+  width: 200px;
+  height: 200px;
+}
+.div-3 {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+}
+.div-4 {
+  background-color: grey;
+  width: 200px;
+  height: 200px;
+}
+.div-5 {
+  background-color: purple;
+  width: 200px;
+  height: 200px;
+}
+.div-6 {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 1000px) {
+  div {
+    display: block;
+  }
+}

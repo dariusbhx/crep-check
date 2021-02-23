@@ -12,7 +12,7 @@ const Navbar = () => {
             <nav>
                 <div className ="toggle">
                     <button onClick ={handleNavCollapse}  
-                            className ="nav-items toggle custom-toggler navbar-toggler"
+                            className =" navbar-btn nav-items toggle custom-toggler "
                             type ="button" 
                             data-toggle ="collapse" data-target =".multi-collapse" 
                             aria-expanded ={showLinks? true : false}aria-controls ="item-collapse-1 item-collapse-2 item-collapse-3">
@@ -28,7 +28,7 @@ const Navbar = () => {
                         <a href="/createpost" className ="nav-items">Create a Post</a>    
                 </div>
                 <div className ={`nav-links multi-collapse ${showLinks ? `collapse`: ''} navbar-collapse nav-items`} id ="item-collapse-3">
-                    <a href="/" className ="nav-items">About us</a>
+                    <a href="/about" className ="nav-items">About us</a>
                 </div>
                 <div className ={`nav-links multi-collapse ${showLinks ? `collapse`: ''} navbar-collapse nav-items`} id ="item-collapse-4">
                     <a href="/" className ="nav-items">Contact us</a>
