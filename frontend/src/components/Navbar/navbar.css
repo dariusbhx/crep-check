@@ -2,51 +2,78 @@
   margin: 0;
   padding: 0;
 }
+
+nav div {
+  width: 100%;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100%;
+  padding-left: 1;
+  align-self: center;
+}
+
+ul li {
+  display: inline;
+}
+
+.nav-items {
+  background-color: darkorange;
+  width: 100%;
+}
+.navbar-btn {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: none;
+  background-color: darkorange;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
 .nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav-items:hover {
+  background-color: orange;
   list-style: none;
   text-decoration: none;
 }
-a {
-  text-decoration: none;
-  color: blue;
+button {
+  border: none;
 }
-li {
-  display: inline;
-  margin: 0;
-  padding: 0;
+div button {
+  border-radius: none;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-ul {
-  width: 50%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.signup-btn {
-  margin-right: 1em;
-}
-
-.home-btn {
-  margin-left: 1em;
-}
-
-@media (max-width: 576px) {
-  nav,
-  nav ul {
-    flex-direction: column;
-    align-items: center;
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
   }
-  .home-btn {
-    margin-left: 0;
+  .toggle {
+    display: none;
+  }
+  .crep-check-btn {
+    text-align: start;
+    padding-left: 1em;
   }
   .signup-btn {
-    margin-right: 0;
-  }
-  a:hover {
+    text-align: end;
+    padding-right: 1em;
   }
 }
