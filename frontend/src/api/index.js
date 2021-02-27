@@ -1,5 +1,5 @@
 import axios from 'axios'
-const url = 'http://localhost:5000/posts'
+const url = 'https://crep-check-api.herokuapp.com/posts'
 
 export const fetchPosts = () => axios.get(url) //Fetching the posts from the api
 export const createPost = (newPost) => axios.post(url,newPost) //Sending a new post to the api

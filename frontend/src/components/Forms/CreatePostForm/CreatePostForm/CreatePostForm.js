@@ -59,8 +59,8 @@ const CreatePostForm = () => {
           <div className="img-file-container">
             <label htmlFor="image">Image</label>
             <FileBase
-              className="image-input" id="image" type="file" multiple={false} label="image"
-              value={formData.image} onChange = {handleChange} />
+            className="image-input" id="image" type="file" multiple={false} label="image"
+            value={formData.image} onChange = {handleChange} />
           </div>
           <div className="btn-container">
             <button type="submit" className="submit-btn" onClick={handleSubmit}>Submit</button>

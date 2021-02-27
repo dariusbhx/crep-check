@@ -1,4 +1,4 @@
-import React, { useState,  } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import 'bootstrap/dist/css/bootstrap.css';
 import './Navbar.css'
@@ -6,7 +6,11 @@ const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
   const handleNavCollapse = () => setShowLinks(!showLinks)
   
- 
+  useEffect(()=> {
+      if(window.innerWidth > '768px'){
+          setShowLinks(false)
+      }
+  },[])
   return ( 
         
             <nav>
