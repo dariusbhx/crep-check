@@ -4,6 +4,7 @@ import {Grid, CircularProgress } from '@material-ui/core'
 import { useSelector} from 'react-redux'
 import useStyles from './styles'
 import {Card} from 'semantic-ui-react'
+
 const Posts = () => {
     const posts = useSelector((state) => state.posts)
     console.log(posts)

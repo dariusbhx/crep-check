@@ -1,10 +1,9 @@
 // import Navbar from './components/Navbar/Navbar'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components copy/navbar2/Navbar'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import CreatePost from './pages/CreatePost/CreatePost'
-import SignUpForm from './components/Forms/SignUpForm/SignUpForm'
 function App() {
   return (
     
@@ -16,7 +15,6 @@ function App() {
         <Route exact component = {Home}path="/" />
         <Route path="/about" component = {About} />
         <Route path="/createpost" component = {CreatePost} />      
-        <Route path="/signup"  component ={SignUpForm}/>
       </Switch>
     </Router>
     </div>

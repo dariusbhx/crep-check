@@ -8,7 +8,15 @@ body {
   color: white;
   /*173753*/
 }
+.submit-btn {
+  display: contents !important;
+  background-color: darkorange;
+}
 
+button:hover {
+  cursor: pointer;
+  background-color: salmon;
+}
 .wrapper {
   width: 550px;
   margin: 5% auto;

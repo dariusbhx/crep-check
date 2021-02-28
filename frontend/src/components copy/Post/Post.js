@@ -1,4 +1,6 @@
 import React from 'react'
+
+
 import {useDispatch} from 'react-redux'
 import {Card,Icon,Image} from 'semantic-ui-react'
 // import {deletePost,likePost} from '../../actions/post'
@@ -9,10 +11,10 @@ const Post = ({post}) => {
     console.log(post)
     return (
         <Card >
-            <Image src = {post.image}/>
+            {/* <Image src = {post.image}/> */}
             <Card.Content>
             <Card.Header>{post.title}</Card.Header>
-            <Card.Meta>Joined in 2016</Card.Meta>
+            <Card.Meta></Card.Meta>
             <Card.Description>
                 {post.price}
             </Card.Description>
