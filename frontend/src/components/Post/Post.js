@@ -1,6 +1,4 @@
 import React from 'react'
-
-
 import {useDispatch} from 'react-redux'
 import {Card,Icon,Image} from 'semantic-ui-react'
 // import {deletePost,likePost} from '../../actions/post'

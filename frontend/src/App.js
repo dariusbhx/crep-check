@@ -1,5 +1,6 @@
-import Navbar from './components/Navbar/Navbar'
+// import Navbar from './components/Navbar/Navbar'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import CreatePost from './pages/CreatePost/CreatePost'
@@ -10,25 +11,12 @@ function App() {
     <div className="App">
     <Router>
       <Navbar />
+      {/* <TestNavbar /> */}
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/createpost">
-          <CreatePost />
-        </Route>
-        <Route path="/signup">
-          <SignUpForm />
-        </Route>
-        {/* <Route path="/cocktail/:id">
-          <SingleCocktail />
-        </Route>
-        <Route path="*">
-          <Error />
-        </Route> */}
+        <Route exact component = {Home}path="/" />
+        <Route path="/about" component = {About} />
+        <Route path="/createpost" component = {CreatePost} />      
+        <Route path="/signup"  component ={SignUpForm}/>
       </Switch>
     </Router>
     </div>
