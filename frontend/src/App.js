@@ -1,6 +1,6 @@
 // import Navbar from './components/Navbar/Navbar'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Navbar from './components copy/navbar2/Navbar'
+import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import CreatePost from './pages/CreatePost/CreatePost'

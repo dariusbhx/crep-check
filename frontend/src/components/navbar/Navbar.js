@@ -75,17 +75,7 @@ function Navbar() {
               Create A Post
             </Link>
           </li>
-          <li>
-            <Link
-              to='/sign-up'
-              className='nav-links-mobile'
-              onClick={closeMobileMenu}
-            >
-              Sign Up
-            </Link>
-          </li>
         </ul>
-        <Button />
       </nav>
     </>
   );

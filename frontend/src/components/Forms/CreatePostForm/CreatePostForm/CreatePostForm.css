@@ -10,7 +10,7 @@ body {
 }
 .submit-btn {
   display: contents !important;
-  background-color: darkorange;
+  background: darkorange !important;
 }
 
 button:hover {

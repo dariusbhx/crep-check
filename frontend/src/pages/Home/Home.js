@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react';
 import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
 import {useDispatch} from 'react-redux';
-import Posts from '../../components copy/Posts/Posts';
+import Posts from '../../components/Posts/Posts';
 import useStyles from './styles'
 import {useGlobalContext} from '../../context'
 import {getPosts} from '../../actions/post'
