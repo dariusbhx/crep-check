@@ -1,21 +1,23 @@
 import React from 'react'
 import Post from '../Post/Post'
-import {Grid, CircularProgress } from '@material-ui/core'
+import { CircularProgress } from '@material-ui/core'
 import { useSelector} from 'react-redux'
 import useStyles from './styles'
 import {Card} from 'semantic-ui-react'
-
+import './Posts.css'
 const Posts = () => {
     const posts = useSelector((state) => state.posts)
     console.log(posts)
-   const classes = useStyles()
   return (
     !posts.length ? <CircularProgress /> : (
-      <Card.Group alignitems ="center"   >
-        {posts.map((post) => (
-            <Post post={post} key ={post._id}   />
-        ))}
-      </Card.Group>
+      <div className ="posts-div">
+        <Card.Group  itemsPerRow = {3}  className ="card-container" >
+          {posts.map((post) => (
+              <Post post={post} key ={post._id}   />
+          ))}
+        </Card.Group>
+      </div>
+     
     )
   )
         }

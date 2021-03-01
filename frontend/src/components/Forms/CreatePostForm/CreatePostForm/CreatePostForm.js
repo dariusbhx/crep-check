@@ -60,7 +60,7 @@ const CreatePostForm = () => {
             <label htmlFor="image">Image</label>
             <FileBase
             className="image-input" id="image" type="file" multiple={false} label="image"
-            value={formData.image} onChange = {handleChange} />
+            value={formData.image} onDone ={({base64}) => setFormData({...formData, image: base64})}  />
           </div>
           <div className="btn-container">
             <button type="submit" className="submit-btn" onClick={handleSubmit}>Submit</button>
