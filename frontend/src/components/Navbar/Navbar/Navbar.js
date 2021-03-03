@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button } from './Button';
+import { Button } from '../Button/Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -16,7 +16,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-         <i class="fas fa-angle-double-up"></i>
+         <i className="fas fa-angle-double-up"></i>
          <p className = "icon">Crep Check</p>
         </Link>
         <div className='menu-icon' onClick={handleClick}>
@@ -57,6 +57,16 @@ function Navbar() {
               Create A Post
             </Link>
           </li>
+          <li className='nav-item'>
+            <Link
+              to='/signup'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Sign Up
+            </Link>
+          </li>
+      
         </ul>
       </nav>
     </>

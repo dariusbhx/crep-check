@@ -1,7 +1,7 @@
 import React, { useSelector, useEffect } from 'react'
 import FileBase from 'react-file-base64'
-import { useGlobalContext } from '../../../../context'
-import { createPost } from '../../../../actions/post'
+import { useGlobalContext } from '../../../context'
+import { createPost } from '../../../actions/post'
 import './CreatePostForm.css'
 import { useDispatch } from 'react-redux'
 const CreatePostForm = () => {

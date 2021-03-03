@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://crep-check-api.herokuapp.com/posts",
+  "proxy": "http://localhost:3000",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
@@ -28,6 +28,7 @@
     "redux-thunk": "^2.3.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",
+    "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

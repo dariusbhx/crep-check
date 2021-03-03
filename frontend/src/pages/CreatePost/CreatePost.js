@@ -1,5 +1,5 @@
 import React from 'react'
-import CreatePostForm from '../../components/Forms/CreatePostForm/CreatePostForm/CreatePostForm'
+import CreatePostForm from '../../components/Forms/CreatePostForm/CreatePostForm'
 export default function Home() {
     return (
         <div>
